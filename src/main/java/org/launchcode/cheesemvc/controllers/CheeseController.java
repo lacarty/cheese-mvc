@@ -16,6 +16,7 @@ import java.util.ArrayList;
 @RequestMapping(value = "cheese")
 public class CheeseController {
 
+    //Modifying the static cheeses list to be a HashMap* object with key/value pairs that correspond to the name/description of the cheese.
     static ArrayList<String> cheeses = new ArrayList<>();
 
     // Request path: cheese/
