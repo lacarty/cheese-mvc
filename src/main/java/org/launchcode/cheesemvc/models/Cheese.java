@@ -1,4 +1,4 @@
-package org.launchcode.models;
+package org.launchcode.cheesemvc.models;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -15,6 +15,8 @@ public class Cheese {
     @NotNull
     @Size(min=1, message = "Description must not be empty")
     private String description;
+
+    private CheeseType type;
 
     private int cheeseId;
     private static int nextId = 1;
@@ -52,5 +54,13 @@ public class Cheese {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public CheeseType getType() {
+        return type;
+    }
+
+    public void setType(CheeseType type) {
+        this.type = type;
     }
 }
